@@ -1,5 +1,10 @@
 Antes de instalar basifoR en linux:
-apt install unixodbc libiodbc2-dev unixodbc unixodbc-dev
-apt install r-cran-rodb cmdbtools 
+apt install unixodbc 
+apt installlibiodbc2-dev 
+apt installunixodbc 
+apt installunixodbc-dev
+
+apt install r-cran-rodb 
+apt install cmdbtools 
 
 Antes de instalar basifoR en windows:
