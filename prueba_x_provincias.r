@@ -40,14 +40,14 @@ getNFI(provincia='extre',nfi= nIFN )[1:10,]# el ifn4 se descarga para extremadur
 getNFI(provincia=11,nfi= nIFN )[1:10,]#----------NO ESTÁ AÚN----------
 getNFI(provincia=12,nfi= nIFN )[1:10,]#----------NO ESTÁ AÚN----------
 
-getNFI(provincia='ciud',nfi= nIFN )[1:10,]#con el 13 no funciona
-getNFI(provincia=13,nfi= nIFN )[1:10,]#con el 13 no funciona
+getNFI(provincia='ciud',nfi= nIFN )[1:10,]# este funciona, pero 
+getNFI(provincia=13,nfi= nIFN )[1:10,]#                         con el 13 no funciona
 
 getNFI(provincia=14,nfi= nIFN )[1:10,]#----------NO ESTÁ AÚN----------
 
 ## https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/inventarios-nacionales/ifn/ifn4/ifn4_acoruna_tcm30-536596.zip
-getNFI(provincia=15,nfi= nIFN )[1:10,]#con el 15 no funciona
-getNFI(provincia='acor',nfi= nIFN )[1:10,]#con el 15 no funciona // tampoco funciona
+getNFI(provincia=15,nfi= nIFN )[1:10,]#con el 15 no funciona, y
+getNFI(provincia='acor',nfi= nIFN )[1:10,]#                      con el el nombre tampoco funciona, pero el enlace esta bien
 
 getNFI(provincia=16,nfi= nIFN )[1:10,]
 getNFI(provincia='cuen',nfi= nIFN )[1:10,]
@@ -76,7 +76,7 @@ getNFI(provincia='leon',nfi= nIFN )[1:10,]# tampoco funciona así
 getNFI(provincia=25,nfi= nIFN )[1:10,]# el ifn4 se descarga para cataluña
 
 ## https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/inventarios-nacionales/ifn/ifn4/ifn4_larioja_tcm30-536580.zip
-getNFI(provincia=26,nfi= nIFN )[1:10,]#-----ESTE DEBERÍA FUNCIONAR-------
+getNFI(provincia=26,nfi= nIFN )[1:10,]#-----ESTE DEBERÍA FUNCIONAR, el enlace está bien -------
 
 getNFI(provincia=27,nfi= nIFN )[1:10,]
 getNFI(provincia='lug',nfi= nIFN )[1:10,]
@@ -108,7 +108,7 @@ getNFI(provincia=34,nfi= nIFN )[1:10,]#enlace mal
 getNFI(provincia='palel',nfi= nIFN )[1:10,]#enlace mal
 
 ## https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/inventarios-nacionales/ifn/ifn4/ifn4_canarias_tcm30-536601.zip
-getNFI(provincia=35,nfi= nIFN )[1:10,]# el ifn4 se descarga para canarias ///
+getNFI(provincia=35,nfi= nIFN )[1:10,]# el ifn4 se descarga para canarias /// el enlace está bien pero no entiende ninguna de las alternativas
 getNFI(provincia='cana',nfi= nIFN )[1:10,]
 getNFI(provincia='tener',nfi= nIFN )[1:10,]
 getNFI(provincia='lasp',nfi= nIFN )[1:10,]
