@@ -1,4 +1,5 @@
 Antes de instalar basifoR en linux:
+Es necesario instalar mdbtools
 apt install unixodbc 
 apt install libiodbc2-dev 
 apt install unixodbc 
@@ -22,3 +23,4 @@ apt install libiodbc2-dev
 
 
 Antes de instalar basifoR en windows:
+es necesario instalar accessdatabaseengine.exe

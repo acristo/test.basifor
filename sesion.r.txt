@@ -1,0 +1,245 @@
+
+> install.packages("~/Downloads/basifoR_0.6.tar.gz", repos = NULL, type = "source")
+Installing package into ‘C:/Users/cristobal/AppData/Local/R/win-library/4.4’
+(as ‘lib’ is unspecified)
+* installing *source* package 'basifoR' ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+
+ _           _ ___     _____ 
+| |_ ___ ___|_|  _|___| __  |
+| . | .'|_ -| |  _| . |    -|
+|___|__,|___|_|_| |___|__|__|
+
+basifoR version 0.6
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (basifoR)
+> #+eval=FALSE 
+> ##    https://cran.r-project.org/web/packages/basifoR/index.html
+> ##    https://search.r-project.org/CRAN/refmans/basifoR/html/00Index.html
+> ## rm(list=ls())
+> ## install.packages('basifoR')
+> options(width=170)
+> library('basifoR')
+
+ _           _ ___     _____ 
+| |_ ___ ___|_|  _|___| __  |
+| . | .'|_ -| |  _| . |    -|
+|___|__,|___|_|_| |___|__|__|
+
+basifoR version 0.6
+
+Type 'citation("basifoR")' for citing this R package in publications
+
+> ls()
+character(0)
+> getwd()
+[1] "C:/Users/cristobal"
+> dendromet_ifn4p39 <- dendroMetrics(provincia=39,nfi=4,cut.dt='h >= 8')
+probando la URL 'http://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/inventarios-nacionales/ifn4_cantabria_tcm30-536602.zip'
+Content type 'text/html;charset=utf-8' length 43675 bytes (42 KB)
+downloaded 42 KB
+
+Error en unzip(temp, exdir = dir, list = TRUE): 
+  archivo zip 'C:\Users\CRISTO~1\AppData\Local\Temp\RtmpmcrFed\file38345c1170de' no pueden ser cargadas
+> getNFI(provincia=39,nfi=2)[1:10,]
+probando la URL 'http://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/servicios/banco-datos-naturaleza/090471228013cc74_tcm30-278544.zip'
+Content type 'application/zip' length 2219280 bytes (2.1 MB)
+downloaded 2.1 MB
+
+   PROVINCIA ESTADILLO NUMORDEN TIPO ARBOL RUMBO DISTANCI ESPECIE DIAMETRO1 DIAMETRO2 CALIDAD FORMA ALTURA PARAMESP
+1         39      1373        1    1     1    50      4.1      71       153       169       3     5    6.0        9
+2         39      1373        2 <NA>     2    58      4.7      78       233       205       4     5    5.5        9
+3         39      1373        3    4     3    69      4.1      71       380       345       3     4   10.0     <NA>
+4         39      1373        4 <NA>     4   134     13.3      71       233       235       2     5    9.0        9
+5         39      1373        5 <NA>     5   150     10.6      73       380       467       3     5    9.5     <NA>
+6         39      1373        6    2     6   161      7.4      71       124       143       3     4    5.0        9
+7         39      1373        7 <NA>     7   164      8.1      71       168       188       3     5    4.5     <NA>
+8         39      1373        8    3     8   318     10.0      71       228       216       2     5   10.5     <NA>
+9         39      1374        1 <NA>     1    60      8.5      73       161       167       2     5    5.5     <NA>
+10        39      1374        2 <NA>     2   129     10.4      78       249       239       3     5    8.5        9
+> getNFI(provincia=40,nfi=2)[1:10,]
+probando la URL 'http://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/servicios/banco-datos-naturaleza/090471228013cc76_tcm30-278545.zip'
+Content type 'application/zip' length 1442439 bytes (1.4 MB)
+downloaded 1.4 MB
+
+   PROVINCIA ESTADILLO NUMORDEN TIPO ARBOL RUMBO DISTANCI ESPECIE DIAMETRO1 DIAMETRO2 CALIDAD FORMA ALTURA PARAMESP
+1         40        22        1    1     1     2      3.5      44        87        78       2     3    4.0     <NA>
+2         40        22        2    2     2    65      4.4      44        89        88       2     3    4.5        9
+3         40        52        1    1     1    33      8.8      26       357       383       2     2   14.0      208
+4         40        52        2    2     2   170      6.6      26       317       358       2     2   14.5      204
+5         40        52        3 <NA>     3   188     11.2      26       340       354       2     2   13.0      211
+6         40        52        4 <NA>     4   192     14.6      26       294       375       2     2   15.0      214
+7         40        52        5    3     5   205     10.9      26       353       362       2     2   16.0      218
+8         40        52        6 <NA>     6   210      7.2      26       392       392       2     2   13.5      208
+9         40        52        7 <NA>     7   254     13.4      26       440       391       2     2   16.0      210
+10        40        52        8    4     8   313     14.7      26       393       424       2     2   14.0      209
+> getNFI(provincia=40,nfi=3)[1:10,]
+probando la URL 'http://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/servicios/banco-datos-naturaleza/Ifn3p40.zip'
+Content type 'application/zip' length 1922576 bytes (1.8 MB)
+downloaded 1.8 MB
+
+   Estadillo Cla Subclase nArbol OrdenIf3 OrdenIf2 Rumbo Distanci Especie Dn1 Dn2   Ht Calidad Forma ParEsp Agente Import Elemento Compara
+1          6   A       1       1        1        1     4      5.9     258 563 536 35.5       2     2     NA    100     NA       NA      NA
+2          6   A       1       2        2        2     8      9.4     258 398 391 29.0       2     2     NA    100     NA       NA      NA
+3          6   A       1       3        3        3    12     11.0     257 349 378 14.5       2     2     NA    100     NA       NA      NA
+4          6   A       1       4        4        4    24     11.0     257 408 359 19.5       2     2     NA    100     NA       NA      NA
+5          6   A       1       5        5        5    30      2.9     258 558 507 36.0       2     2     NA    100     NA       NA      NA
+6          6   A       1       6        6        6    38     11.2     257 569 527 23.0       2     2     NA    100     NA       NA      NA
+7          6   A       1       7        7        0    74     15.0     257 460 463 24.0       2     2     42    100     NA       NA      NA
+8          6   A       1       8        8        0    87     19.0     257 490 498 22.5       2     2     NA    100     NA       NA      NA
+9          6   A       1       9        9        7    97     24.1     257 668 668 23.0       2     2     NA    100     NA       NA      NA
+10         6   A       1      10       10        8    98     17.4     258 764 764 37.0       2     2     41    100     NA       NA      NA
+> getNFI(provincia=40,nfi=4)[1:10,]
+probando la URL 'http://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/inventarios-nacionales/ifn4_segovia_tcm30-536591.zip'
+Content type 'text/html;charset=utf-8' length 43675 bytes (42 KB)
+downloaded 42 KB
+
+Error en unzip(temp, exdir = dir, list = TRUE): 
+  archivo zip 'C:\Users\CRISTO~1\AppData\Local\Temp\RtmpmcrFed\file383430856730' no pueden ser cargadas
+> getNFI(provincia=17,nfi=4)[1:10,]
+Warning: Data for codigo '17' was not found!
+NULL
+> getNFI(provincia=15,nfi=4)[1:10,]
+Warning: Data for codigo '15' was not found!
+NULL
+> getNFI(provincia='A Coruña',nfi=4)[1:10,]
+Warning: Data for codigo 'A Coruña' was not found!
+NULL
+> getNFI(provincia='Valladolid',nfi=4)[1:10,]
+probando la URL 'http://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/inventarios-nacionales/ifn4_valladolid_tcm30-536593.zip'
+Content type 'text/html;charset=utf-8' length 43675 bytes (42 KB)
+downloaded 42 KB
+
+Error en unzip(temp, exdir = dir, list = TRUE): 
+  archivo zip 'C:\Users\CRISTO~1\AppData\Local\Temp\RtmpmcrFed\file383461a45b0c' no pueden ser cargadas
+> getNFI(provincia=49,nfi=4)[1:10,]
+probando la URL 'http://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/inventarios-nacionales/ifn4_zamora_tcm30-536594.zip'
+Content type 'text/html;charset=utf-8' length 43675 bytes (42 KB)
+downloaded 42 KB
+
+Error en unzip(temp, exdir = dir, list = TRUE): 
+  archivo zip 'C:\Users\CRISTO~1\AppData\Local\Temp\RtmpmcrFed\file38345df655e' no pueden ser cargadas
+> getNFI(provincia=42,nfi=4)[1:10,]
+probando la URL 'http://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/inventarios-nacionales/ifn/ifn4/ifn4_soria_tcm30-536592.zip'
+Content type 'application/zip' length 2985724 bytes (2.8 MB)
+downloaded 2.8 MB
+
+   Provincia Estadillo Cla Subclase nArbol OrdenIf3 OrdenIf4 Rumbo Distanci Especie Dn1 Dn2   Ht Calidad Forma NPae CPae VPae Agente
+1         42         1   A        1      1        1        0    NA       NA      NA  NA  NA   NA      NA    NA   NA   NA   NA     NA
+2         42         1   A        1      2        2        0    NA       NA      NA  NA  NA   NA      NA    NA   NA   NA   NA     NA
+3         42         1   A        1      3        3        1     0     14.1      21 336 335 17.9       2     2   NA   NA   NA    100
+4         42         1   A        1      4        4        2     1      1.9      21 214 232 15.8       2     2   NA   NA   NA    100
+5         42         1   A        1      5        5        0    NA       NA      NA  NA  NA   NA      NA    NA   NA   NA   NA     NA
+6         42         1   A        1      6        6        3     3     11.7      21 338 367 18.9       2     2   NA   NA   NA    100
+7         42         1   A        1      7        7        0    NA       NA      NA  NA  NA   NA      NA    NA   NA   NA   NA     NA
+8         42         1   A        1      8        8        4     6     10.4      21 277 279 17.8       2     2   NA   NA   NA    100
+9         42         1   A        1      9        9        0    NA       NA      NA  NA  NA   NA      NA    NA   NA   NA   NA     NA
+10        42         1   A        1     10       10        0    NA       NA      NA  NA  NA   NA      NA    NA   NA   NA   NA     NA
+   Import Elemento Hcopa
+1      NA       NA    NA
+2      NA       NA    NA
+3      NA       NA    NA
+4      NA       NA    NA
+5      NA       NA    NA
+6      NA       NA    NA
+7      NA       NA    NA
+8      NA       NA    NA
+9      NA       NA    NA
+10     NA       NA    NA
+> getNFI(provincia=42,nfi=3)[1:10,]
+probando la URL 'http://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/servicios/banco-datos-naturaleza/Ifn3p42.zip'
+Content type 'application/zip' length 3133232 bytes (3.0 MB)
+downloaded 3.0 MB
+
+   Estadillo Cla Subclase nArbol OrdenIf3 OrdenIf2 Rumbo Distanci Especie Dn1 Dn2   Ht Calidad Forma ParEsp Agente Import Elemento
+1          1   A       1       1        1        1     0      9.9      21 207 211 14.0       2     2     NA    100     NA       NA
+2          1   A       1       2        2        0     0      6.0      21 124 139 10.5       2     2     NA    100     NA       NA
+3          1   A       1       3        3        0     0     14.7      21 281 275 14.0       2     2     NA    100     NA       NA
+4          1   A       1       4        4        2     1      1.9      21 183 202 13.0       2     2     NA    100     NA       NA
+5          1   A       1       5        5        3     2      5.0      21 196 200 13.0       2     2     NA    100     NA       NA
+6          1   A       1       6        6        4     4     12.0      21 310 325 15.5       2     2     NA    100     NA       NA
+7          1   A       1       7        7        5     6      6.9      21 142 151 11.5       2     2     NA    100     NA       NA
+8          1   A       1       8        8        0     8     10.8      21 255 261 15.5       2     2     NA    100     NA       NA
+9          1   A       1       9        9        6    16      3.9      21 124 131 12.5       2     2     NA    100     NA       NA
+10         1   A       1      10       10        7    16      7.3      21 150 163 13.0       2     2     NA    100     NA       NA
+   Compara
+1       NA
+2       NA
+3       NA
+4       NA
+5       NA
+6       NA
+7       NA
+8       NA
+9       NA
+10      NA
+> getNFI(provincia=49,nfi=3)[1:10,]
+probando la URL 'http://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/servicios/banco-datos-naturaleza/Ifn3p49.zip'
+Content type 'application/zip' length 1218520 bytes (1.2 MB)
+downloaded 1.2 MB
+
+   Estadillo Cla Subclase nArbol OrdenIf3 OrdenIf2 Rumbo Distanci Especie Dn1 Dn2   Ht Calidad Forma ParEsp Agente Import Elemento
+1          5   A        1      1        1        0   302      8.6      43 120 135  5.2       3     5     NA    316      2        9
+2          5   A        1      2        2        1   314      9.0      43 267 298 10.6       2     4     NA    100     NA       NA
+3          5   A        1      3        3        2   315      6.0      43 203 225  9.2       2     5     49    100     NA       NA
+4          5   A        1      4        4        3   316      6.7      43 228 242 11.0       2     4     49    100     NA       NA
+5          5   A        1      5        5        0   351      7.9      43 199 198 10.5       2     4     49    100     NA       NA
+6          6   A        1      1        1        1     3      2.7      25 156 166  7.2       2     3     NA    100     NA       NA
+7          6   A        1      2        2        2    67      1.3      21 120 122  7.2       2     3     NA    100     NA       NA
+8          6   A        1      3        3        0   103      8.9      21 178 182  8.9       2     2     NA    100     NA       NA
+9          6   A        1      4        4        3   103      5.1      21 170 175  8.0       2     2     NA    100     NA       NA
+10         6   A        1      5        5        0   132      8.8      21 137 145  7.5       2     3     NA    100     NA       NA
+   Compara
+1        X
+2        X
+3        X
+4        X
+5        X
+6        X
+7        X
+8        X
+9        X
+10       X
+> getNFI(provincia=47,nfi=3)[1:10,]
+probando la URL 'http://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/servicios/banco-datos-naturaleza/Ifn3p47.zip'
+Content type 'application/zip' length 845474 bytes (825 KB)
+downloaded 825 KB
+
+   Estadillo Cla Subclase nArbol OrdenIf3 OrdenIf2 Rumbo Distanci Especie Dn1 Dn2  Ht Calidad Forma ParEsp Agente Import Elemento
+1          3   A        1      1        1        0    98     13.7      45 251 254 8.5       2     4     NA    100     NA       NA
+2          3   A        1      2        2        0   126     13.7      45 230 228 8.0       2     4     NA    100     NA       NA
+3          3   A        1      3        3        0   201      7.8      45 176 183 6.0       2     4     NA    100     NA       NA
+4          3   A        1      4        4        1   290     14.6      45 360 362 9.0       2     4     NA    100     NA       NA
+5          3   A        1      5        5        0   315      7.6      45 145 145 5.5       2     4     NA    100     NA       NA
+6          3   A        1      6        6        0   340      4.0      45 155 150 5.5       2     4     NA    100     NA       NA
+7          4   A        1      1        1        0    54      8.5      45 155 157 5.5       2     4     NA    100     NA       NA
+8          4   A        1      2        2        1   305      3.9      45 210 214 6.0       2     4     42    100     NA       NA
+9          4   A        1      3        3        2   310      3.9      45 209 207 6.0       2     4     42    100     NA       NA
+10         6   A       3C      1        1        0     0      2.2      24 133 140 5.0       2     3     41     NA     NA       NA
+   Compara
+1        X
+2        X
+3        X
+4        X
+5        X
+6        X
+7        X
+8        X
+9        X
+10       X
+> getNFI(provincia=47,nfi=4)[1:10,]
+probando la URL 'http://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/inventarios-nacionales/ifn4_valladolid_tcm30-536593.zip'
+Content type 'text/html;charset=utf-8' length 43675 bytes (42 KB)
+downloaded 42 KB
+
+Error en unzip(temp, exdir = dir, list = TRUE): 
+  archivo zip 'C:\Users\CRISTO~1\AppData\Local\Temp\RtmpmcrFed\file3834128d5d03' no pueden ser cargadas
+> 
