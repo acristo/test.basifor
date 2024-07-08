@@ -1,10 +1,9 @@
 library('basifoR')
-nIFN<-2
+nIFN<-3
 
                                         # País Vasco
 getNFI(provincia=1,nfi = nIFN)[1:10,]
 getNFI(provincia='álava',nfi = nIFN)[1:10,]
-getNFI(provincia='araba',nfi = nIFN)[1:10,]# no va
 
 getNFI(provincia=2, nfi= nIFN )[1:10,] 
 getNFI(provincia='alba', nfi= nIFN )[1:10,]
@@ -79,9 +78,7 @@ getNFI(provincia=25,nfi= nIFN )[1:10,]
 getNFI(provincia='lér',nfi= nIFN )[1:10,]
 
 getNFI(provincia=26,nfi= nIFN )[1:10,]
-getNFI(provincia='logroño',nfi= nIFN )[1:10,] ### no sé por quien responde
-getNFI(provincia='larioja',nfi= nIFN )[1:10,] ### no sé por quien responde
-getNFI(provincia='rioja',nfi= nIFN )[1:10,] ### este es el que funciona ###
+getNFI(provincia='rioja',nfi= nIFN )[1:10,] 
 
 getNFI(provincia=27,nfi= nIFN )[1:10,]
 getNFI(provincia='lug',nfi= nIFN )[1:10,]

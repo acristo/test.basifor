@@ -200,3 +200,7 @@ getNFI(provincia=29,nfi= nIFN )[1:10,]#----------NO ESTÁ AÚN----------
 getNFI(provincia=41,nfi= nIFN )[1:10,]#----------NO ESTÁ AÚN----------
 
 getNFI(provincia=46,nfi= nIFN )[1:10,]#----------NO ESTÁ AÚN----------
+
+
+q()
+n
