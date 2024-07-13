@@ -12,6 +12,8 @@
 
 library('basifoR')
 library('tidyverse')
+options(width=170)
+
 url.ifn <- "https://www.miteco.gob.es/es/biodiversidad/servicios/banco-datos-naturaleza/"
 # lectura de datos del ifn2 de Cantabria
 ## dir(path='./data/ifn2/', pattern='*.zip')
@@ -36,11 +38,24 @@ head(dendro.esta)
 url.22.if4 <- "https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/inventarios-nacionales/Ifn4p22_Huesca.zip"
 trees.22.if4 <- readNFI(url.22.if4, dt.nm = "PCMayores")
 trees.22.if4_filtro <- trees.22.if4 %>% 
-  filter(Estadillo ==12)
+  filter(Estadillo < 20)
 str(trees.22.if4_filtro)
-cut.esta <- dendroMetrics(trees.22.if4_filtro, summ.vr = c('Estadillo', 'Especie'))
+cut.esta.filtro <- dendroMetrics(trees.22.if4_filtro,
+                          summ.vr = c('Estadillo', 'Especie'))
+cut.esta.filtro
 
-cut.esta
+
+cut.esta <- dendroMetrics(trees.22.if4,
+                          summ.vr = c('Estadillo'))
+head(cut.esta,50)
+cut.esta[cut.esta$Estadillo==13,]
+
+
+cut.esta.sp <- dendroMetrics(trees.22.if4,
+                          summ.vr = c('Estadillo', 'espe'))
+head(cut.esta.sp,50)
+cut.esta.sp[cut.esta.sp$Estadillo==12,]
+
 ##   pr Especie Estadillo     ba      d     dg      h    Hd      n        v
 ## 1 22      31        12 22.804 16.825 18.305 11.289 17.45 866.51 2108.559
 
