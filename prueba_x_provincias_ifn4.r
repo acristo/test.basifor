@@ -2,19 +2,24 @@ library('basifoR')
 nIFN<-4
 
 
-#############################################################################################################################################
-## ENLACE MAL
-#############################################################################################################################################
+#################################################################################################################################
+## ENLACE MAL y además no encuentra la referencia
+#################################################################################################################################
 
 ## https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/inventarios-nacionales/ifn4_avila_tcm30-536598.zip
 ## https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/inventarios-nacionales/ifn/ifn4/ifn4_avila_tcm30-536598.zip
 getNFI(provincia=5,nfi= nIFN )[1:10,]#enlace mal
-getNFI(provincia='avila',nfi= nIFN )[1:10,]#enlace mal
+getNFI(provincia='ávila',nfi= nIFN )[1:10,]#enlace mal
 
 ## https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/inventarios-nacionales/ifn4_leon_tcm30-536581.zip
 ## https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/inventarios-nacionales/ifn/ifn4/ifn4_leon_tcm30-536581.zip
 getNFI(provincia=24,nfi= nIFN )[1:10,]#enlace mal
-getNFI(provincia='leon',nfi= nIFN )[1:10,]# tampoco funciona así
+getNFI(provincia='león',nfi= nIFN )[1:10,]# tampoco funciona así
+
+
+#################################################################################################################################
+## ENLACE MAL
+#################################################################################################################################
 
 ## https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/inventarios-nacionales/ifn/ifn4_murcia_tcm30-536584.zip
 ## https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/inventarios-nacionales/ifn/ifn4/ifn4_murcia_tcm30-536584.zip
@@ -29,7 +34,7 @@ getNFI(provincia='nav',nfi= nIFN )[1:10,]#enlace mal
 ## http://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/inventarios-ifn/ifn4/nacionales/ifn4_palencia_tcm30-536588.zip
 ## http://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/inventarios-ifn/ifn/ifn4/ifn4_palencia_tcm30-536588.zip
 getNFI(provincia=34,nfi= nIFN )[1:10,]#enlace mal
-getNFI(provincia='palel',nfi= nIFN )[1:10,]#enlace mal
+getNFI(provincia='pale',nfi= nIFN )[1:10,]#enlace mal
 
 ## http://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/inventarios-ifn/ifn4/nacionales/ifn4_cantabria_tcm30-536602.zip
 ## http://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/inventarios-ifn/ifn/ifn4/ifn4_cantabria_tcm30-536602.zip
@@ -45,13 +50,30 @@ getNFI(provincia='seg',nfi= nIFN )[1:10,]#enlace mal
 ## http://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/inventarios-ifn/ifn4/nacionales/ifn4_valladolid_tcm30-536593.zip
 ## http://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/inventarios-ifn/ifn/ifn4/ifn4_valladolid_tcm30-536593.zip
 getNFI(provincia=47,nfi= nIFN )[1:10,]#enlace mal
-getNFI(provincia='val',nfi= nIFN )[1:10,]
+getNFI(provincia='valla',nfi= nIFN )[1:10,]
 
 ##  'http://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/inventarios-ifn/ifn4/nacionales/ifn4_zamora_tcm30-536594.zip'
 ##  'http://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/inventarios-ifn/ifn/ifn4/ifn4_zamora_tcm30-536594.zip'
 getNFI(provincia=49,nfi= nIFN )[1:10,]#enlace mal
 getNFI(provincia='zam',nfi= nIFN )[1:10,]#enlace mal
 
+
+
+##################################################################################################################################
+## FUNCIONA PERO NO DEL TODO
+##################################################################################################################################
+
+getNFI(provincia='ciud',nfi= nIFN )[1:10,]# este funciona, pero 
+getNFI(provincia=13,nfi= nIFN )[1:10,]#                         con el 13 no funciona
+
+
+
+#################################################################################################################################
+## ENLACE MAL y no encuentra el registro
+##
+## Se puede hacer algo para relacionar las comunidades con las provincias para el IFN4?????
+##
+#################################################################################################################################
                                         # País Vasco
 ## https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/inventarios-nacionales/ifn4_paisvasco_tcm30-536587.zip
 ## https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/inventarios-nacionales/ifn/ifn4/ifn4_paisvasco_tcm30-536587.zip
@@ -64,32 +86,20 @@ getNFI(provincia=48,nfi= nIFN )[1:10,]# el ifn4 se descarga para el pais vasco
 
 
 
-
-
-
-
-#############################################################################################################################################
-## FUNCIONA PERO NO DEL TODO
-#############################################################################################################################################
-
-getNFI(provincia='ciud',nfi= nIFN )[1:10,]# este funciona, pero 
-getNFI(provincia=13,nfi= nIFN )[1:10,]#                         con el 13 no funciona
-
-#############################################################################################################################################
+#################################################################################################################################
 ## NO FUNCIONA PERO DEBRIA, EL ENLACE ESTA BIEN Y NO ES POR CCAA
-#############################################################################################################################################
+#################################################################################################################################
 
 ## https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/inventarios-nacionales/ifn/ifn4/ifn4_acoruna_tcm30-536596.zip
 getNFI(provincia=15,nfi= nIFN )[1:10,]#con el 15 no funciona, y
 getNFI(provincia='acor',nfi= nIFN )[1:10,]#                      con el el nombre tampoco funciona, pero el enlace esta bien
 
-## https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/inventarios-nacionales/ifn/ifn4/ifn4_larioja_tcm30-536580.zip
-getNFI(provincia=26,nfi= nIFN )[1:10,]#-----ESTE DEBERÍA FUNCIONAR, el enlace está bien ------- AUNQUE EL NOMBRE ES DE CCAA
 
 
-#############################################################################################################################################
+
+##################################################################################################################################
 ## DESCARGA POR COMUNIDAD AUTÓNOMA /// NO FUNCIONA NINGUNA, PERO ENTIENDO QUE POR NOMBRE DEBERÍAN FUNCIONAR...
-#############################################################################################################################################
+##################################################################################################################################
 
 
 ## https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/inventarios-nacionales/ifn/ifn4/ifn4_extremadura_tcm30-536579.zip
@@ -108,6 +118,10 @@ getNFI(provincia=17,nfi= nIFN )[1:10,]# el ifn4 se descarga para cataluña
 getNFI(provincia=25,nfi= nIFN )[1:10,]# el ifn4 se descarga para cataluña
 
 getNFI(provincia=43,nfi= nIFN )[1:10,]# el ifn4 se descarga para cataluña
+
+## https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/inventarios-nacionales/ifn/ifn4/ifn4_larioja_tcm30-536580.zip
+getNFI(provincia=26,nfi= nIFN )[1:10,]#-----ESTE DEBERÍA FUNCIONAR, el enlace está bien ------- AUNQUE EL NOMBRE ES DE CCAA
+getNFI(provincia='lario',nfi= nIFN )[1:10,]#-----ESTE DEBERÍA FUNCIONAR, el enlace está bien ------- AUNQUE EL NOMBRE ES DE CCAA
 
 ## https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/inventarios-nacionales/ifn/ifn4/ifn4_canarias_tcm30-536601.zip
 getNFI(provincia=35,nfi= nIFN )[1:10,]# el ifn4 se descarga para canarias /// el enlace está bien pero no entiende ninguna de las alternativas
