@@ -1,7 +1,6 @@
 library('basifoR')
 nIFN<-3
 
-                                        # País Vasco
 getNFI(provincia=1,nfi = nIFN)[1:10,]
 getNFI(provincia='álava',nfi = nIFN)[1:10,]
 
